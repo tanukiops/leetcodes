@@ -9,6 +9,7 @@ func LenghtOfLongestSubstring(s string) int {
 }
 
 // Used recursion to solve this problem, this is not the most efficient way
+// TODO: look up sliding window
 func getLongestLength(s string, length int) int {
 	if len(s) > 1 && len(s) > length {
 		letterMap := make(map[rune]int)

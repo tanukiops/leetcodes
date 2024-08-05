@@ -1,5 +1,6 @@
 package easy
 
+// Could have been done with a map for a more efficient result
 func KthDistinct(arr []string, k int) string {
 	var distinctStrings []string
 	for _, v := range arr {
