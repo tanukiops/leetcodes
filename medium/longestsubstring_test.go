@@ -9,7 +9,7 @@ import (
 type TestCase struct {
 	Name string
 	Data string
-	Want int
+	Want any
 }
 
 func TestLengthOfLongestSubstring(t *testing.T) {
