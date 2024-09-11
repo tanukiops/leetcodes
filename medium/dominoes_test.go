@@ -10,6 +10,21 @@ func TestPushDominoes(t *testing.T) {
 	testCases := []TestCase{
 		{
 			Name: "testcase",
+			Data: "....R....R......R.......................L", // ..R.LL
+			Want: "....RRRRRRRRRRRRRRRRRRRRRRRR.LLLLLLLLLLLL",
+		},
+		{
+			Name: "testcase",
+			Data: ".......L.L",
+			Want: "LLLLLLLLLL",
+		},
+		{
+			Name: "testcase",
+			Data: ".R",
+			Want: ".R",
+		},
+		{
+			Name: "testcase",
 			Data: "RR.L",
 			Want: "RR.L",
 		},
