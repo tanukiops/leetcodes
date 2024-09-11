@@ -1,17 +1,11 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/tanukiops/leetcode/easy"
+	"github.com/tanukiops/leetcode/medium"
 )
 
 func main() {
-	// result := easy.KthDistinct([]string{"a", "a", "aaa", "b", "b", "bb"}, 1)
-	// fmt.Println(result)
-	list := []int{1, 2, 9, 4, 5, 1003, 7, 8, 9, 50, 100, 110, 400, 700, 889, 2923, 23999, 400000}
-	result := easy.TwoSum(list, 3)
-	fmt.Println(result)
+	medium.LongestPalindrome("cbbd")
 
 }
 
