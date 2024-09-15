@@ -24,13 +24,49 @@ func main() {
 		Val:  4,
 		Next: nil,
 	}
+	node5 := &medium.ListNode{
+		Val:  5,
+		Next: nil,
+	}
+	// node6 := &medium.ListNode{
+	// 	Val:  6,
+	// 	Next: nil,
+	// }
+	// node7 := &medium.ListNode{
+	// 	Val:  7,
+	// 	Next: nil,
+	// }
+	// node8 := &medium.ListNode{
+	// 	Val:  8,
+	// 	Next: nil,
+	// }
+	// node9 := &medium.ListNode{
+	// 	Val:  9,
+	// 	Next: nil,
+	// }
+	// node10 := &medium.ListNode{
+	// 	Val:  10,
+	// 	Next: nil,
+	// }
+	// node11 := &medium.ListNode{
+	// 	Val:  11,
+	// 	Next: nil,
+	// }
 	node1.Next = node2
-	node2.Next = node3
+	node2.Next = nil
 	node3.Next = node4
+	node4.Next = node5
+	// node5.Next = node6
+	// node6.Next = node7
+	// node7.Next = node8
+	// node8.Next = node9
+	// node9.Next = node10
+	// node10.Next = node11
 
-	medium.PrintNodes(node1)
-	fmt.Println("--- swap pairs ---")
-	medium.SwapPairs(nil)
+	// medium.PrintNodes(node1)
+	// fmt.Println("--- swap  ---")
+	medium.SwapNodes(node1, 1)
+	fmt.Println("--- swapped  ---")
 	medium.PrintNodes(node2)
 }
 

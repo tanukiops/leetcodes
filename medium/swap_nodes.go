@@ -15,13 +15,13 @@ func SwapPairs(head *ListNode) *ListNode {
 		// last node in the list, just return iself
 		return head
 	}
-	if head.Next.Next == nil {
-		//last 2 nodes in the list, swap and return head
-		newHead := head.Next
-		newHead.Next = head
-		head.Next = nil
-		return newHead
-	}
+	// if head.Next.Next == nil {
+	// 	//last 2 nodes in the list, swap and return head
+	// 	newHead := head.Next
+	// 	newHead.Next = head
+	// 	head.Next = nil
+	// 	return newHead
+	// }
 	//swap head and head.next then go deeper on head.next
 	node3 := head.Next.Next
 	newHead := head.Next
@@ -32,7 +32,7 @@ func SwapPairs(head *ListNode) *ListNode {
 func PrintNodes(head *ListNode) {
 	curr := head
 	for curr != nil {
-		fmt.Println(curr.Val)
+		fmt.Println(curr)
 		curr = curr.Next
 	}
 }
