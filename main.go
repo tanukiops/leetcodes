@@ -1,12 +1,37 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/tanukiops/leetcode/medium"
 )
 
 func main() {
-	medium.LongestPalindrome("cbbd")
+	// medium.LongestPalindrome("cbbd")
+	node1 := &medium.ListNode{
+		Val:  1,
+		Next: nil,
+	}
+	node2 := &medium.ListNode{
+		Val:  2,
+		Next: nil,
+	}
+	node3 := &medium.ListNode{
+		Val:  3,
+		Next: nil,
+	}
+	node4 := &medium.ListNode{
+		Val:  4,
+		Next: nil,
+	}
+	node1.Next = node2
+	node2.Next = node3
+	node3.Next = node4
 
+	medium.PrintNodes(node1)
+	fmt.Println("--- swap pairs ---")
+	medium.SwapPairs(nil)
+	medium.PrintNodes(node2)
 }
 
 // func binsearch(list []int, target int, start int, end int) (int, bool) {
